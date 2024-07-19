@@ -13,4 +13,5 @@ public class MonsterTest {
     assertNotNull("monster should have a string", classUnderTest.toString());
   }
 
+  
 }
