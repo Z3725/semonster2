@@ -40,10 +40,19 @@ public class Player {
     }
 
     public void showNumbersList() {
-        System.out.println(name + "の数値リスト:");
-        for (int number : numbersList) {
-            System.out.println(number);
-        }
+      System.out.println(name + "の数値リスト:");
+      for (int number : numbersList) {
+        System.out.println(number);
+      }
+    }
+
+    public String toStringDeck() {
+      System.out.println("Deck:user");
+      for (Monster monster : monsterDeck) {
+        System.out.println(monster.getName() + ":レア度[" + monster.getRare() + "]");
+      }
+
+      return "Dummy";
     }
 
     public static void main(String[] args) {

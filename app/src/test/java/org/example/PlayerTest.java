@@ -9,4 +9,10 @@ public class PlayerTest {
     App classUnderTest = new App();
     assertNotNull("player should have a string", classUnderTest.toString());
   }
+
+  @Test
+  public void toStringPlayer() {
+    Player classUnderTest = new Player("Dummy");
+    assertNotNull("player should have a string", classUnderTest.toStringDeck());
+  }
 }
